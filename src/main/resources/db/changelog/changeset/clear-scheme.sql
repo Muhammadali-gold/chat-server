@@ -1,0 +1,7 @@
+DROP TABLE IF EXISTS auth_users;
+
+DROP TABLE IF EXISTS chat;
+
+DROP TABLE IF EXISTS message;
+
+DROP TABLE IF EXISTS user_chat;
