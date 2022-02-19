@@ -18,6 +18,8 @@ public class User extends BaseEntity {
 //    @JsonIgnore
     private String password;
 
+    private String address;
+
     @JsonIgnore
     @ManyToMany(mappedBy = "users")
     private Set<Chat> chats = new HashSet<>();
