@@ -13,9 +13,6 @@ create table auth_user
     username   varchar(255)
 );
 
-alter table auth_user
-    owner to postgres;
-
 create table chat
 (
     id         bigint not null
@@ -30,8 +27,6 @@ create table chat
     name       varchar(255)
 );
 
-alter table chat
-    owner to postgres;
 
 create table message
 (
@@ -53,9 +48,6 @@ create table message
             references auth_user
 );
 
-alter table message
-    owner to postgres;
-
 create table user_chat
 (
     chat_id bigint not null
@@ -68,9 +60,4 @@ create table user_chat
         primary key (chat_id, user_id)
 );
 
-alter table user_chat
-    owner to postgres;
-
 create sequence hibernate_sequence;
-
-alter sequence hibernate_sequence owner to postgres;
