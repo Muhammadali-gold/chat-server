@@ -1,7 +1,5 @@
 databaseChangeLog:
   - include:
-        file: db/changelog/changeset/clear-scheme.sql
-  - include:
       file: db/changelog/changeset/create-scheme.sql
   - include:
       file: db/changelog/changeset/add-address-column.sql
